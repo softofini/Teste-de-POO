@@ -1,16 +1,25 @@
 package br.edu.ifba.saj.ads.poo.model;
 
 public class Usuario {
-   
+
+    private Integer id;
     private String login;
     private String senha;
+    private String email;
         
 
-    public Usuario(String login, String senha) {
+public Usuario(Integer id, String login, String senha, String email) {
+        this.id = id;
         this.login = login;
         this.senha = senha;
+        this.email = email;
     }
- 
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
     public String getLogin() {
         return login;
     }
@@ -22,5 +31,11 @@ public class Usuario {
     }
     public void setSenha(String senha) {
         this.senha = senha;
-}
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }  
 }
