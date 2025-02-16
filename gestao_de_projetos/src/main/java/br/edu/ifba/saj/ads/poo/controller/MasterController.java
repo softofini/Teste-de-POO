@@ -25,7 +25,7 @@ public class MasterController {
     private VBox menu;
 
     @FXML
-    private Label userEmail;
+    private Label userUsername;
 
     @FXML
     private Circle userPicture;
@@ -40,61 +40,19 @@ public class MasterController {
                 });
     }
 
-    // @FXML
-    // void showHome(ActionEvent event) {
-    //     limparBotoes(event.getSource());
-    //     masterPane.setCenter(new Pane());
 
-    // }
-
-    // @FXML
-    // void showUsuarios(ActionEvent event) {
-    //     limparBotoes(event.getSource());
-    //     masterPane.setCenter(new Pane());
-    // }
-
-    // private void limparBotoes(Object source) {
-    //     menu.getChildren().forEach((node) -> {
-    //         if (node instanceof Button btn) {
-    //             node.pseudoClassStateChanged(PseudoClass.getPseudoClass("selected"), false);                
-    //         }
+    //  private void showFXMLFile(String resourceName) {
+    //      try {            
+    //          Pane fxmlCarregado = FXMLLoader.load(getClass().getResource(resourceName));
+    //         masterPane.setCenter(fxmlCarregado);
+    //     } catch (Exception e) {
+    //         new Alert(AlertType.ERROR, "Erro ao carregar o arquivo " + resourceName).showAndWait();
+    //          e.printStackTrace();
     //     }
+    //  }
 
-    //     );
-    //     if (source instanceof Button btn) {
-    //         btn.pseudoClassStateChanged(PseudoClass.getPseudoClass("selected"), true);
-    //     }
-    // }
-
-    // @FXML
-    // void showCadAutores(ActionEvent event) {
-    //     limparBotoes(event.getSource());
-    //     showFXMLFile("CadAutor.fxml");
-    // }
-    // @FXML
-    // void showListAutores(ActionEvent event) {
-    //     limparBotoes(event.getSource());
-    //     showFXMLFile("ListAutor.fxml");
-    // }
-
-    // @FXML
-    // void showLivros(ActionEvent event) {
-    //     limparBotoes(event.getSource());
-    //     showFXMLFile("CadLivro.fxml");
-    // }
-
-    private void showFXMLFile(String resourceName) {
-        try {            
-            Pane fxmlCarregado = FXMLLoader.load(getClass().getResource(resourceName));
-            masterPane.setCenter(fxmlCarregado);
-        } catch (Exception e) {
-            new Alert(AlertType.ERROR, "Erro ao carregar o arquivo " + resourceName).showAndWait();
-            e.printStackTrace();
-        }
-    }
-
-    public void setEmail(String email) {
-        userEmail.setText(email);
+    public void setUsername(String Username) {
+        userUsername.setText(Username);
     }
 }
 
