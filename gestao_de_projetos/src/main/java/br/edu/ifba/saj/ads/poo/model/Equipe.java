@@ -25,7 +25,7 @@ public class Equipe {
         this.nome = nome;
     }
    
-    public void setMembros(Usuario usuario) {
+    public void addMembros(Usuario usuario) {
         this.membros.add(usuario);
     }
     public List<Usuario> getMembros() {

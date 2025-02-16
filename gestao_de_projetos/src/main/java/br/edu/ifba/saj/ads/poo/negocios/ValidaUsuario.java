@@ -11,7 +11,7 @@ public class ValidaUsuario {
     static List<Usuario> listaUsuarios = new ArrayList<>();
 
     static{
-        listaUsuarios.add(new Usuario(1, "admin", "admin", "admin@gmail.com"));
+        listaUsuarios.add(new Usuario("admin", "admin", "admin@gmail.com"));
     }
 
     public Usuario validaLogin(String login, String senha) throws ErroLogin{

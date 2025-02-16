@@ -1,8 +1,7 @@
 package br.edu.ifba.saj.ads.poo.model;
 
 import java.time.LocalDate;
-import java.time.Month;
-import java.time.Year;
+
 
 public class Tarefa {
     private int idTarefa;
@@ -11,18 +10,17 @@ public class Tarefa {
     private String descricao;
     private LocalDate dataInicio;
     private LocalDate dataFim;
-    private String status;
+    private Boolean status;
     private String responsavel;
-    private String projeto;
+    
 
-    public Tarefa(String nome, String descricao, LocalDate dataFim, String responsavel, String projeto) {
+    public Tarefa(String nome, String descricao, LocalDate dataFim, String responsavel) {
         this.nome = nome;
         this.idTarefa = nextId++;
         this.descricao = descricao;
         this.dataInicio = LocalDate.now();
         this.dataFim = dataFim;
         this.responsavel = responsavel;
-        this.projeto = projeto;
     }
 
     public int getIdTarefa() {
@@ -49,10 +47,10 @@ public class Tarefa {
     public void setDataFim(LocalDate dataFim) {
         this.dataFim = dataFim;
     }
-    public String getStatus() {
+    public Boolean getStatus() {
         return status;
     }
-    public void setStatus(String status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
     public String getResponsavel() {

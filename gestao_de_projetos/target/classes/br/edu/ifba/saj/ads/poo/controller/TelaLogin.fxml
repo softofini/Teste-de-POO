@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.poo.controller.TelaLoginController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.poo.controller.TelaLoginController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -25,14 +25,14 @@
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: green;">
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: eeeeee;">
                <children>
                   <ImageView fitHeight="336.0" fitWidth="337.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img/LogoV.png" />
+                        <Image url="@img/logo.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Bem vindo ao Sistema" textAlignment="CENTER" textFill="WHITE">
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Bem-vindo ao Sistema" textAlignment="CENTER" textFill="#7572d3">
                      <font>
                         <Font name="Carlito Bold Italic" size="26.0" />
                      </font>
@@ -50,14 +50,9 @@
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txUsuario" layoutX="39.0" layoutY="117.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário"/>
-                  <PasswordField fx:id="txSenha" layoutX="39.0" layoutY="174.0" prefHeight="35.0" prefWidth="245.0" promptText="senha"/>
-                  <Button cancelButton="true" layoutX="164.0" layoutY="232.0" mnemonicParsing="false" onAction="#limparCampos" prefHeight="35.0" prefWidth="120.0"  text="Cancelar" textFill="WHITE">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Button>
-                  <Button defaultButton="true" layoutX="39.0" layoutY="232.0" mnemonicParsing="false" onAction="#entrar" prefHeight="35.0" prefWidth="120.0"  text="Entrar" textFill="WHITE">
+                  <TextField fx:id="txUsuario" layoutX="39.0" layoutY="117.0" prefHeight="35.0" prefWidth="245.0" promptText="usuário" />
+                  <PasswordField fx:id="txSenha" layoutX="39.0" layoutY="174.0" prefHeight="35.0" prefWidth="245.0" promptText="senha" />
+                  <Button defaultButton="true" layoutX="74.0" layoutY="229.0" mnemonicParsing="false" onAction="#entrar" prefHeight="35.0" prefWidth="175.0" text="Entrar" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>

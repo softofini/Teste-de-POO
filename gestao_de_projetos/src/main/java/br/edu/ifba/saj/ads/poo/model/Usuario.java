@@ -1,20 +1,25 @@
 package br.edu.ifba.saj.ads.poo.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario {
 
-    private Integer id;
+    private int id;
+    private static int nextId = 1;
     private String login;
     private String senha;
     private String username;
+    private List<Tarefa> tarefas = new ArrayList<>();
         
 
-public Usuario(Integer id, String login, String senha, String username) {
-        this.id = id;
+public Usuario(String login, String senha, String username) {
+        this.id = nextId++;
         this.login = login;
         this.senha = senha;
         this.username = username;
     }
-    public Integer getId() {
+    public int getId() {
         return id;
     }
     public void setId(Integer id) {
@@ -38,5 +43,11 @@ public Usuario(Integer id, String login, String senha, String username) {
     public void setUsername(String username) {
         this.username = username;
     } 
+    public void addTarefa(Tarefa tarefa) {
+        this.tarefas.add(tarefa);
+    }
+    public List<Tarefa> getTarefas() {
+        return tarefas;
+    }
 
 }

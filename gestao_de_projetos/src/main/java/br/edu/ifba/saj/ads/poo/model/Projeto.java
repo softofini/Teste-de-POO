@@ -8,7 +8,7 @@ public class Projeto {
     private static int nextId = 1;
     private String nome;
     private String descricao;
-    private String status;
+    private Boolean status;
     private String equipe;
     private List<Tarefa> tarefas = new ArrayList<>();
 
@@ -43,11 +43,11 @@ public class Projeto {
         this.descricao = descricao;
     }
 
-    public String getStatus() {
+    public Boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
